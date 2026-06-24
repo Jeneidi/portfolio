@@ -35,6 +35,7 @@
   <header class="nav" id="nav">
     <a href="#top" class="nav__logo" data-magnetic>MJ<span class="nav__logo-dot">.</span></a>
     <nav class="nav__links">
+      <a href="#experience" class="nav__link" data-cursor>Experience</a>
       <a href="#work" class="nav__link" data-cursor>Work</a>
       <a href="#about" class="nav__link" data-cursor>About</a>
       <a href="#skills" class="nav__link" data-cursor>Skills</a>
@@ -54,7 +55,7 @@
       </h1>
       <div class="hero__bottom">
         <p class="hero__blurb reveal-line"><span>Building RAG pipelines, secure LLM tools, and machine learning systems<br/>that turn messy information into fast, useful software.</span></p>
-        <a href="#work" class="hero__scroll" data-magnetic data-cursor>
+        <a href="#experience" class="hero__scroll" data-magnetic data-cursor>
           <span class="hero__scroll-circle">↓</span>
           <span>scroll to explore</span>
         </a>
@@ -71,10 +72,92 @@
       </div>
     </div>
 
+    <!-- ===== Experience ===== -->
+    <section class="section experience" id="experience">
+      <div class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Work <em>Experience</em></h2>
+      </div>
+
+      <div class="experience__timeline" aria-label="Work experience timeline">
+        <article class="experience__item reveal" style="--exp-a:#2de2e6; --exp-b:#8b5cf6;">
+          <time class="experience__date" datetime="2026-05">May 2026 - Present</time>
+          <div class="experience__rail" aria-hidden="true"><span></span></div>
+          <div class="experience__card" data-cursor>
+            <div class="experience__top">
+              <div class="experience__logo experience__logo--image">
+                <img src="assets/logos/a2a-logo.png" alt="Access to Arabia A2A logo" />
+              </div>
+              <div>
+                <p class="experience__company">Access to Arabia (A2A)</p>
+                <h3 class="experience__role">AI/ML Engineer Intern</h3>
+                <p class="experience__meta">Python · Azure OpenAI · Azure AI Search · FastAPI</p>
+              </div>
+              <time class="experience__date-mobile" datetime="2026-05">May 2026 - Present</time>
+            </div>
+            <ul class="experience__bullets">
+              <li>Built a RAG pipeline for document ingestion, embeddings, vector search, and natural-language answers over client knowledge bases.</li>
+              <li>Designed REST API architecture for businesses to query internal documents through conversational AI.</li>
+              <li>Hardened the AI workflow with RBAC, secure API-key handling, document permissions, and input validation.</li>
+            </ul>
+            <div class="experience__tags">
+              <span>RAG</span><span>NLP</span><span>Azure</span><span>Security</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience__item reveal" style="--exp-a:#c6ff4d; --exp-b:#2de2e6;">
+          <time class="experience__date" datetime="2026-01">Jan 2026 - Present</time>
+          <div class="experience__rail" aria-hidden="true"><span></span></div>
+          <div class="experience__card" data-cursor>
+            <div class="experience__top">
+              <div class="experience__logo experience__logo--text">FSU</div>
+              <div>
+                <p class="experience__company">Florida State University</p>
+                <h3 class="experience__role">Research Assistant</h3>
+                <p class="experience__meta">PyTorch · PyTorch Geometric · Differential privacy</p>
+              </div>
+              <time class="experience__date-mobile" datetime="2026-01">Jan 2026 - Present</time>
+            </div>
+            <ul class="experience__bullets">
+              <li>Implemented differentially private graph neural network methods for privacy-aware graph learning.</li>
+              <li>Evaluated accuracy-privacy tradeoffs on Cora and PubMed benchmarks using PyTorch and PyTorch Geometric.</li>
+            </ul>
+            <div class="experience__tags">
+              <span>GNNs</span><span>PyTorch</span><span>Research</span><span>Privacy</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience__item reveal" style="--exp-a:#ff2d75; --exp-b:#ffb02e;">
+          <time class="experience__date" datetime="2025-05">May 2025 - Aug 2025</time>
+          <div class="experience__rail" aria-hidden="true"><span></span></div>
+          <div class="experience__card" data-cursor>
+            <div class="experience__top">
+              <div class="experience__logo experience__logo--text">LD</div>
+              <div>
+                <p class="experience__company">Layouti Design</p>
+                <h3 class="experience__role">Software Engineer Intern</h3>
+                <p class="experience__meta">Next.js · JavaScript · Git</p>
+              </div>
+              <time class="experience__date-mobile" datetime="2025-05">May 2025 - Aug 2025</time>
+            </div>
+            <ul class="experience__bullets">
+              <li>Implemented and debugged features across internal systems and digital services.</li>
+              <li>Improved usability and reliability through testing, iteration, and collaborative engineering workflows.</li>
+            </ul>
+            <div class="experience__tags">
+              <span>Frontend</span><span>Product</span><span>Testing</span><span>Git</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- ===== Work ===== -->
     <section class="section work" id="work">
       <div class="section__head reveal">
-        <span class="section__num">01</span>
+        <span class="section__num">02</span>
         <h2 class="section__title">Personal <em>Portfolio</em></h2>
       </div>
 
@@ -150,13 +233,13 @@
     <!-- ===== About ===== -->
     <section class="section about" id="about">
       <div class="section__head reveal">
-        <span class="section__num">02</span>
+        <span class="section__num">03</span>
         <h2 class="section__title">About <em>Me</em></h2>
       </div>
       <div class="about__grid">
         <p class="about__big reveal">I'm Mohammad, a Computer Science major and Mathematics minor in the FSU Honors Program. I build <em>AI systems</em> across retrieval, applied ML, secure LLM tooling, and product engineering.</p>
         <div class="about__stats">
-          <div class="stat reveal"><span class="stat__num" data-count="130">0</span><span class="stat__plus">+</span><p>Team field, top 3 overall at FSU ACM Spring '26</p></div>
+          <div class="stat reveal"><span class="stat__num" data-count="130">0</span><span class="stat__plus">+</span><p>Teams beat in the programming contest held by FSU ACM in Spring '26 .</p></div>
           <div class="stat reveal"><span class="stat__num" data-count="300">0</span><p>Documents in a Lodestone RAG eval corpus</p></div>
           <div class="stat reveal"><span class="stat__num" data-count="6">0</span><p>Portfolio projects across AI, security, and data</p></div>
         </div>
@@ -166,7 +249,7 @@
     <!-- ===== Skills ===== -->
     <section class="section skills" id="skills">
       <div class="section__head reveal">
-        <span class="section__num">03</span>
+        <span class="section__num">04</span>
         <h2 class="section__title">Tool<em>kit</em></h2>
       </div>
       <ul class="skills__list">
