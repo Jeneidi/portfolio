@@ -394,6 +394,12 @@ body.loaded .reveal-line > span { transform: translateY(0); }
   max-width: 1120px;
   margin: 0 auto;
 }
+@media (min-width: 960px) {
+  .experience__timeline {
+    margin-left: max(0px, calc((100% - 1120px) / 2 - 2rem));
+    margin-right: auto;
+  }
+}
 .experience__item {
   display: grid;
   grid-template-columns: minmax(130px, 0.22fr) 44px minmax(0, 1fr);
@@ -501,11 +507,25 @@ body.loaded .reveal-line > span { transform: translateY(0); }
   background: #09090d;
   padding: 0.75rem;
 }
+.experience__logo--light {
+  background: #fff;
+  padding: 0.65rem;
+}
+.experience__logo--wide { width: 72px; }
+.experience__logo--square {
+  overflow: hidden;
+  padding: 0;
+  background: #fff;
+}
 .experience__logo img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+.experience__logo--square img {
+  height: 100%;
+  object-fit: cover;
 }
 .experience__logo--text {
   color: var(--ink);
@@ -602,6 +622,7 @@ body.loaded .reveal-line > span { transform: translateY(0); }
     height: 50px;
     border-radius: 15px;
   }
+  .experience__logo--wide { width: 64px; }
   .experience__company {
     font-size: 0.73rem;
     letter-spacing: 0.12em;
