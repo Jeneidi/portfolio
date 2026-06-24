@@ -424,7 +424,19 @@ body.loaded .reveal-line > span { transform: translateY(0); }
 }
 .card:hover::before { opacity: 1; }
 
-.card__media { overflow: hidden; }
+.card__media {
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--card-a), var(--card-b));
+}
+.card__image {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 30vw, 320px);
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.7s var(--ease-out);
+}
+.card:hover .card__image { transform: scale(1.07) rotate(-1deg); }
 .card__art {
   height: clamp(220px, 30vw, 320px);
   display: grid;
