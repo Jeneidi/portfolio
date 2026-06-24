@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Jeneidi — Creative Developer</title>
+  <meta name="description" content="Portfolio of Mohammad Jeneidi — building bold, vibrant digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__counter" id="preloaderCounter">0</div>
+    <div class="preloader__bar"><span id="preloaderBar"></span></div>
+  </div>
+
+  <!-- ===== Custom cursor ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== Ambient background ===== -->
+  <div class="orbs" aria-hidden="true">
+    <div class="orb orb--violet" data-parallax="0.05"></div>
+    <div class="orb orb--pink" data-parallax="0.09"></div>
+    <div class="orb orb--cyan" data-parallax="0.14"></div>
+    <div class="orb orb--lime" data-parallax="0.07"></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" data-magnetic>MJ<span class="nav__logo-dot">.</span></a>
+    <nav class="nav__links">
+      <a href="#work" class="nav__link" data-cursor>Work</a>
+      <a href="#about" class="nav__link" data-cursor>About</a>
+      <a href="#skills" class="nav__link" data-cursor>Skills</a>
+      <a href="#contact" class="nav__cta" data-magnetic>Let's talk <span class="nav__cta-arrow">→</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <p class="hero__eyebrow reveal-line"><span>✦ Creative Developer & Designer</span></p>
+      <h1 class="hero__title">
+        <span class="hero__line"><span class="hero__line-inner">I BUILD</span></span>
+        <span class="hero__line"><span class="hero__line-inner hero__line-inner--gradient">VIVID</span></span>
+        <span class="hero__line"><span class="hero__line-inner">DIGITAL <em class="hero__outline">WORLDS</em></span></span>
+      </h1>
+      <div class="hero__bottom">
+        <p class="hero__blurb reveal-line"><span>Designing & engineering interfaces that feel alive —<br/>color, motion, and code in perfect collision.</span></p>
+        <a href="#work" class="hero__scroll" data-magnetic data-cursor>
+          <span class="hero__scroll-circle">↓</span>
+          <span>scroll to explore</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>DESIGN ✦ DEVELOP ✦ ANIMATE ✦ SHIP ✦ </span>
+        <span>DESIGN ✦ DEVELOP ✦ ANIMATE ✦ SHIP ✦ </span>
+        <span>DESIGN ✦ DEVELOP ✦ ANIMATE ✦ SHIP ✦ </span>
+        <span>DESIGN ✦ DEVELOP ✦ ANIMATE ✦ SHIP ✦ </span>
+      </div>
+    </div>
+
+    <!-- ===== Work ===== -->
+    <section class="section work" id="work">
+      <div class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Selected <em>Work</em></h2>
+      </div>
+
+      <div class="work__grid">
+        <!-- EXAMPLE PROJECT — replace with real ones -->
+        <a href="#" class="card reveal" data-cursor-text="View →" style="--card-a:#8b5cf6; --card-b:#ff2d75;">
+          <div class="card__media">
+            <div class="card__art card__art--1"><span>◐</span></div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Nebula Dashboard</h3>
+            <p class="card__desc">Real-time analytics platform with fluid data visualizations. <i>(example placeholder)</i></p>
+            <div class="card__tags"><span>React</span><span>D3.js</span><span>WebGL</span></div>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-cursor-text="View →" style="--card-a:#2de2e6; --card-b:#8b5cf6;">
+          <div class="card__media">
+            <div class="card__art card__art--2"><span>◆</span></div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Pulse Commerce</h3>
+            <p class="card__desc">Headless e-commerce experience with buttery page transitions. <i>(example placeholder)</i></p>
+            <div class="card__tags"><span>Next.js</span><span>Stripe</span><span>GSAP</span></div>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-cursor-text="View →" style="--card-a:#c6ff4d; --card-b:#2de2e6;">
+          <div class="card__media">
+            <div class="card__art card__art--3"><span>✺</span></div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Echo AI Chat</h3>
+            <p class="card__desc">Conversational AI interface with streaming responses. <i>(example placeholder)</i></p>
+            <div class="card__tags"><span>Python</span><span>FastAPI</span><span>Claude API</span></div>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-cursor-text="View →" style="--card-a:#ff2d75; --card-b:#ffb02e;">
+          <div class="card__media">
+            <div class="card__art card__art--4"><span>❋</span></div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Orbit Studio</h3>
+            <p class="card__desc">Award-style agency site with 3D scroll storytelling. <i>(example placeholder)</i></p>
+            <div class="card__tags"><span>Three.js</span><span>Vite</span><span>Blender</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+      <div class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 class="section__title">About <em>Me</em></h2>
+      </div>
+      <div class="about__grid">
+        <p class="about__big reveal">I'm a developer obsessed with the moment an interface stops feeling like software and starts feeling like <em>magic</em>. <i>(example bio — swap in your story)</i></p>
+        <div class="about__stats">
+          <div class="stat reveal"><span class="stat__num" data-count="5">0</span><span class="stat__plus">+</span><p>Years building for the web</p></div>
+          <div class="stat reveal"><span class="stat__num" data-count="40">0</span><span class="stat__plus">+</span><p>Projects shipped to production</p></div>
+          <div class="stat reveal"><span class="stat__num" data-count="12">0</span><span class="stat__plus">+</span><p>Happy clients worldwide</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section skills" id="skills">
+      <div class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Tool<em>kit</em></h2>
+      </div>
+      <ul class="skills__list">
+        <li class="skills__row reveal" data-cursor>
+          <span class="skills__name">Frontend Engineering</span>
+          <span class="skills__detail">React · TypeScript · Next.js · CSS wizardry</span>
+        </li>
+        <li class="skills__row reveal" data-cursor>
+          <span class="skills__name">Motion & Interaction</span>
+          <span class="skills__detail">GSAP · Framer Motion · WebGL · Lottie</span>
+        </li>
+        <li class="skills__row reveal" data-cursor>
+          <span class="skills__name">Backend & APIs</span>
+          <span class="skills__detail">Node.js · Python · PostgreSQL · GraphQL</span>
+        </li>
+        <li class="skills__row reveal" data-cursor>
+          <span class="skills__name">AI Integration</span>
+          <span class="skills__detail">LLM apps · RAG pipelines · Claude API</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <p class="contact__kicker reveal">Have an idea?</p>
+      <button type="button" class="contact__title" id="sayHi" data-magnetic data-cursor-text="Say hi ✦">
+        <span class="contact__title-line reveal">LET'S MAKE IT</span>
+        <span class="contact__title-line contact__title-line--gradient reveal">UNFORGETTABLE</span>
+      </button>
+      <div class="contact__links reveal">
+        <a href="mailto:jeneidimohammad@gmail.com" data-cursor>Email</a>
+        <a href="https://github.com/Jeneidi" target="_blank" rel="noopener" data-cursor>GitHub</a>
+        <a href="https://www.linkedin.com/in/mohammad-jeneidi/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Say-hi modal ===== -->
+  <div class="modal" id="sayHiModal" role="dialog" aria-modal="true" aria-label="Get in touch" hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__card">
+      <button type="button" class="modal__close" data-modal-close aria-label="Close" data-cursor>✕</button>
+      <p class="modal__kicker">✦ Say hi</p>
+      <h3 class="modal__title">Pick your channel</h3>
+      <div class="modal__options">
+        <a class="modal__option" data-cursor
+           href="mailto:jeneidimohammad@gmail.com?subject=Hey%20Mohammad%20%E2%80%94%20let%27s%20build%20something&body=Hi%20Mohammad%2C%0A%0AI%20just%20saw%20your%20portfolio%20and%20">
+          <span class="modal__option-icon" style="--opt-a:#8b5cf6; --opt-b:#ff2d75;">✉</span>
+          <span class="modal__option-text">
+            <strong>Email me</strong>
+            <small>Opens a draft, ready to send</small>
+          </span>
+          <span class="modal__option-arrow">→</span>
+        </a>
+        <a class="modal__option" data-cursor target="_blank" rel="noopener"
+           href="https://www.linkedin.com/messaging/compose/?recipient=mohammad-jeneidi">
+          <span class="modal__option-icon" style="--opt-a:#2de2e6; --opt-b:#8b5cf6;">in</span>
+          <span class="modal__option-text">
+            <strong>DM on LinkedIn</strong>
+            <small>Jumps straight into a message</small>
+          </span>
+          <span class="modal__option-arrow">→</span>
+        </a>
+      </div>
+      <button type="button" class="modal__copy" id="copyEmail" data-cursor>
+        <span class="modal__copy-label">jeneidimohammad@gmail.com</span>
+        <span class="modal__copy-hint" id="copyHint">copy ⧉</span>
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 Mohammad Jeneidi</span>
+    <span>Crafted with chaos & color ✦</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
