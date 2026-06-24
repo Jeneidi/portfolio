@@ -102,6 +102,59 @@ if (staticMode) {
   });
 })();
 
+/* ---------- Rotating role titles ---------- */
+(() => {
+  const rotator = document.getElementById("roleRotator");
+  if (!rotator) return;
+  const items = [...rotator.querySelectorAll(".role-rotator__item")];
+  if (items.length < 2) return;
+
+  let current = items.findIndex((el) => el.classList.contains("is-active"));
+  if (current < 0) current = 0;
+
+  // lock the container to the active word's width so the mask-slide has nothing
+  // to clip horizontally; width transitions smoothly between roles.
+  const fitWidth = () => {
+    rotator.style.width = Math.ceil(items[current].getBoundingClientRect().width) + "px";
+  };
+
+  const sync = () => fitWidth();
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(sync);
+  }
+  sync();
+  window.addEventListener("resize", fitWidth);
+
+  if (prefersReducedMotion) return;
+
+  const HOLD = 2600; // time each role stays on screen
+  const advance = () => {
+    const prev = current;
+    items[prev].classList.remove("is-active");
+    items[prev].classList.add("is-exit");
+
+    current = (current + 1) % items.length;
+    items[current].classList.add("is-active");
+    fitWidth();
+
+    // once the outgoing word has slid away, reset it below without animating
+    window.setTimeout(() => {
+      const el = items[prev];
+      el.style.transition = "none";
+      el.classList.remove("is-exit");
+      void el.offsetWidth; // force reflow so the reset isn't animated
+      el.style.transition = "";
+    }, 800);
+  };
+
+  let timer = window.setInterval(advance, HOLD);
+  // pause cycling while the tab is hidden so roles don't pile up
+  document.addEventListener("visibilitychange", () => {
+    window.clearInterval(timer);
+    if (!document.hidden) timer = window.setInterval(advance, HOLD);
+  });
+})();
+
 /* ---------- Scroll reveals ---------- */
 (() => {
   const observer = new IntersectionObserver(

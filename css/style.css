@@ -243,6 +243,70 @@ a { color: inherit; text-decoration: none; cursor: none; }
   color: var(--lime);
   margin-bottom: 1.5rem;
 }
+.hero__eyebrow .hero__eyebrow-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
+}
+
+/* static geometric mark (replaces the AI-cliché sparkle) */
+.hero__eyebrow-mark {
+  width: 0.78em;
+  height: 0.78em;
+  flex: none;
+  overflow: visible;
+  transform: translateY(-0.04em);
+}
+.hero__eyebrow-diamond {
+  fill: none;
+  stroke: var(--lime);
+  stroke-width: 1.3;
+  stroke-linejoin: round;
+}
+.hero__eyebrow-core {
+  fill: var(--cyan);
+}
+
+/* rotating role titles — vertical mask slide */
+.role-rotator {
+  display: inline-grid;
+  justify-items: start;
+  overflow: hidden;
+  vertical-align: bottom;
+  transition: width 0.65s var(--ease-out);
+  will-change: width;
+}
+.role-rotator__item {
+  grid-area: 1 / 1;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(112%);
+  filter: blur(8px);
+  background: linear-gradient(90deg, var(--lime), var(--cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition:
+    transform 0.75s var(--ease-out),
+    opacity 0.5s ease,
+    filter 0.5s ease;
+  will-change: transform, opacity, filter;
+}
+.role-rotator__item.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+.role-rotator__item.is-exit {
+  opacity: 0;
+  transform: translateY(-112%);
+  filter: blur(8px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .role-rotator__item {
+    transition: none;
+  }
+}
 .hero__title {
   position: relative;
   z-index: 2;
