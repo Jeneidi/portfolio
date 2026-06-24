@@ -507,6 +507,10 @@ body.loaded .reveal-line > span { transform: translateY(0); }
   background: #09090d;
   padding: 0.75rem;
 }
+.experience__logo--a2a {
+  background: #5b2a7a;
+  padding: 0.58rem;
+}
 .experience__logo--light {
   background: #fff;
   padding: 0.65rem;
