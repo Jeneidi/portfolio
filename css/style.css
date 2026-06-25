@@ -875,6 +875,11 @@ body.loaded .reveal-line > span { transform: translateY(0); }
   transition: border-color 0.4s, box-shadow 0.4s;
   will-change: transform;
 }
+@keyframes cardReveal {
+  from { opacity: 0; transform: translateY(48px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card.reveal.in-view { animation: cardReveal 0.9s var(--ease-out); }
 .card:hover {
   border-color: transparent;
   box-shadow: 0 24px 60px -18px color-mix(in srgb, var(--card-a) 55%, transparent);
