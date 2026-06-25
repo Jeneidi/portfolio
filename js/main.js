@@ -167,7 +167,7 @@ if (staticMode) {
         }
       });
     },
-    { threshold: 0.15, rootMargin: "0px 0px -8% 0px" }
+    { threshold: 0.1, rootMargin: "0px 0px 8% 0px" }
   );
   document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 })();
