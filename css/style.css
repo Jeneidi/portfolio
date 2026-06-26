@@ -355,12 +355,9 @@ body.loaded .hero__line-inner { transform: translateY(0); }
   aspect-ratio: 0.72;
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.14);
-  background:
-    linear-gradient(145deg, rgba(139, 92, 246, 0.35), rgba(255, 45, 117, 0.08)),
-    rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.04);
   box-shadow:
-    0 34px 90px -35px rgba(45, 226, 230, 0.8),
-    0 26px 80px -35px rgba(255, 45, 117, 0.75),
+    0 30px 70px -28px rgba(0, 0, 0, 0.65),
     inset 0 1px 0 rgba(255, 255, 255, 0.16);
 }
 .hero__portrait.reveal {
@@ -368,31 +365,6 @@ body.loaded .hero__line-inner { transform: translateY(0); }
 }
 .hero__portrait.reveal.in-view {
   transform: translateY(0) scale(1);
-}
-.hero__portrait::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  z-index: 2;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(150deg, var(--cyan), var(--violet), var(--pink));
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0.95;
-  pointer-events: none;
-}
-.hero__portrait::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  border-radius: inherit;
-  background:
-    linear-gradient(180deg, rgba(8, 7, 13, 0) 42%, rgba(8, 7, 13, 0.48) 100%),
-    radial-gradient(circle at 62% 22%, rgba(198, 255, 77, 0.18), transparent 28%);
-  pointer-events: none;
 }
 .hero__portrait img {
   position: relative;
@@ -403,37 +375,15 @@ body.loaded .hero__line-inner { transform: translateY(0); }
   border-radius: inherit;
   object-fit: cover;
   object-position: 52% 24%;
-  filter: saturate(0.96) contrast(1.06);
 }
 .hero__portrait-glow {
   position: absolute;
-  inset: 14%;
-  z-index: -2;
-  border-radius: 50%;
-  background: var(--cyan);
-  filter: blur(70px);
-  opacity: 0.25;
-}
-.hero__portrait-ring {
-  position: absolute;
+  inset: -12%;
   z-index: -1;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  pointer-events: none;
-}
-.hero__portrait-ring--one {
-  width: 44%;
-  aspect-ratio: 1;
-  top: -7%;
-  right: -12%;
-  border-color: color-mix(in srgb, var(--lime) 42%, transparent);
-}
-.hero__portrait-ring--two {
-  width: 58%;
-  aspect-ratio: 1;
-  bottom: -10%;
-  left: -18%;
-  border-color: color-mix(in srgb, var(--pink) 45%, transparent);
+  border-radius: 36px;
+  background: conic-gradient(from 200deg, var(--violet), var(--cyan), var(--pink), var(--violet));
+  filter: blur(38px);
+  opacity: 0.4;
 }
 
 .hero__bottom {
