@@ -434,7 +434,7 @@ body.loaded .reveal-line > span { transform: translateY(0); }
 @media (min-width: 981px) {
   .hero {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) clamp(190px, 18vw, 280px);
+    grid-template-columns: minmax(0, 1fr) clamp(215px, 20vw, 315px) clamp(4rem, 20vw, 17rem);
     align-content: center;
     column-gap: clamp(1.25rem, 3vw, 3rem);
   }
@@ -453,9 +453,9 @@ body.loaded .reveal-line > span { transform: translateY(0); }
     top: auto;
     right: auto;
     width: 100%;
-    justify-self: end;
+    justify-self: center;
     align-self: center;
-    margin-top: 1.6rem;
+    margin-top: -1.2rem;
   }
 }
 @media (max-width: 980px) {
