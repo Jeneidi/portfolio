@@ -16,7 +16,7 @@
   </g>
 
   <!-- Real SafeDeps logo, scaled 1.95, visible art centered on x=600, vcenter y=455 -->
-  <g transform="translate(386.9,357.5) scale(1.95)">
+  <g transform="translate(311.4,357.5) scale(1.95)">
     <!-- shield --><path d="M48 14 L78 24 V50 C78 68 65 79 48 86 C31 79 18 68 18 50 V24 Z" fill="#16a34a"/>
     <!-- checkmark --><path d="M34 50 L44 60 L63 38" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     <!-- wordmark --><text x="100" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="700" letter-spacing="-1.5" fill="#0f172a">safedeps</text>
